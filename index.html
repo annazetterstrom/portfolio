@@ -1,28 +1,125 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Portfolio</title>
     <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=PT+Serif" rel="stylesheet">
+
 </head>
+
 <body>
+    <header>
+        <nav>
+            <h1>AZ</h1>
+            <h4>Anna Zetterström</h4>
+            <a href="#Contact">Contact</a>
+            <a href="#Projects">Projects</a>
+            <a href="#CoverLetter">Cover Letter</a>
+            <a href="#Resume">Resume</a>
+        </nav>
+        <br>
+        <hr>
 
-    
-    <nav>
-        <a href="#Resume">Resume</a>
-        <a href="#CoverLetter">Cover Letter</a>
-        <a href="#Projects">Projects</a>
-        <a href="#Contact">Contact</a>
-        <img class="logo" src="./Images/Logo.jpg" alt="logga">
-    </nav>
-    <br class="clearfix">
-
-   
+    </header>
 
 
 
-    
+    <main class="wrapper">
+
+<h1>Resume</h1>
+    <h3>Programming abilities</h3>
+    <ul>
+        <li>
+            Jag har pluggat C# på komvux, väldigt lite. Endast grundläggande.
+            Annars hade jag inga förkunskaper innan jag började på nackademin. <br>
+        </li>
+    </ul>
+
+    <h3>Tidigare kurser</h3>
+    <ol>
+        <li>
+            <b>Frontend-development, introduction and project methodology </b> <br>
+            Mestadels teori i denna kurs. Vi hade en uppgift där vi skulle göra en mockup av en hemsida i balsamiq.
+            Gick igenm scrum och agilt arbete.
+        </li>
+        <li>
+            <b>
+                Javascript 1
+            </b> <br>
+            Grundläggande kunsskaper. Väldigt grundläggande uppgifter, t.ex vi gjorde en tärning.
+            Kursen var 6 veckor lång, jag vet inte exakt hur många timmar jag la ner men ca 180 timmar.
+            Känner mig inte säker på javascript än plus att det va ett tag sen vi hade den kursen.
+        </li>
+
+        <li>
+            <b>HTML & CSS</b>  <br>
+            Grundläggande kunskaper. Vi gjorde en hemsida med vanilla HTML & CSS. <a target="_blank" href="https://www.annazetterstrom.site/">Vår websida.</a>
+            Kursen var 5 veckor lång, jag la ner ca 200 timmar.
+            HTML känner jag mig hyfsat säker på, CSS är jag inte lika bra på.
+        </li>
+
+        <li>
+            <b>Grafikvertyg</b> <br>
+            Optimerade bilder i photoshop och gjorde mockups. Gjorde en logga i Illustrator. Kursen var 3 veckor lång.
+        </li>
+    </ol>
+
+    <h3>Kunskap</h3>
+
+    <p>Jag är intresserad av programmerings delen av frontend. Jag är inte så intresserad av design biten. Men just nu
+        känner jag att javascript är den svåra delen, känner mig väldigt grön. HTML är lättast, CSS är också lite svårare.</p>
+
+
+<hr>
+
+
+<h2>Cover Letter</h2>
+
+
+
+<hr>
+
+
+<h2>Projects</h2>
+
+<hr>
+
+
+
+
+
+        <h2>Get in touch with me</h2>
+
+        <p class="p">
+            Email: <a href="mailto:anna.wiktoria@me.com">anna.wiktoria@me.com</a>
+        </p>
+ <a target="_blank"  href="https://github.com/annazetterstrom">
+        <img class="img-link" src="./Images/github.png" alt="Github">
+ </a> 
+ <a target="_blank"  href="https://www.linkedin.com/in/anna-zetterstr%C3%B6m-585259b0">
+     <img class="img-link" src="./Images/linkedin.png" alt="LinkedIn">
+ </a>
+        <form name="contact" method="POST" data-netlify="true">
+
+            <input class="form formmedia" type="text" name="name" placeholder="Name">
+
+            <input class="form formmedia" type="email" name="email" placeholder="Email" required>
+
+            <textarea class="form formmedia" name="message" cols="50" rows="10" placeholder="Message"></textarea>
+
+            <input class="form formmedia" type="submit" value="Send">
+        </form>
+
+    </main>
+
+
+
+
+
 </body>
+
 </html>
