@@ -1,0 +1,22 @@
+
+.logo{
+    display: inline;
+}
+
+nav a{
+    text-align: right; 
+    background-color: #ffffff;
+    color: #000000;
+    padding: 12px 9px 12px 9px;
+    float: right;
+    text-decoration: none; 
+}
+
+.clearfix{
+    clear: both;
+}
+
+nav a:hover{
+    color: #888282;
+}
+
