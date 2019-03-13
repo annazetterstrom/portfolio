@@ -157,7 +157,6 @@ form {
 
 .inline{
     display: inline; 
-    
 }
 
 
@@ -224,7 +223,6 @@ form {
     display: block;
     max-width: 100%;
 }
-
 
 /* --- FOOTER */
 
@@ -295,5 +293,6 @@ form {
         flex-basis: 25%;
         flex-grow: 0;
     }
+   
 
 }
