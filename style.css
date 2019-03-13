@@ -1,61 +1,31 @@
+/* --- GLOBAL */
+
 * {
     box-sizing: border-box;
-}
-
-h1 {
-    font-family: 'PT Serif', serif;
-    display: inline;
-    border-right: solid 2px #000000;
-    color: #4B4A4A;
-    padding: 3px;
-}
-
-h4 {
-    font-family: 'PT Serif', serif;
-    display: inline;
-}
-
-header {
-    position: fixed;
-    width: 100%;
-    padding: 5px;
-    background-color: #ffffff;
-    color: #000000;
-    opacity: 0.9;
-}
-
-nav a {
-    font-family: 'PT Serif', serif;
-    background-color: #ffffff;
-    color: #000000;
-    padding: 12px 9px 12px 9px;
-    float: right;
     text-decoration: none;
+    scroll-behavior: smooth;
 }
 
-.clearfix {
-    clear: both;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'PT Serif', serif;
 }
 
-nav a:hover {
-    color: #888282;
-}
-div {
-    width: 200px;
-    height: 200px;
-    display: block;
-    position: relative;
-  }
-
+/* Makes the background fixed and adds opacity */
 body {
     background-repeat: no-repeat;
     position: relative;
     background-attachment: fixed;
-    color: #000000; 
+    color: #000000;
 }
-body::after{
-    content: "";
-    background-image: url(./Images/liten.jpg);
+
+body::after {
+    content: " ";
+    background-image: url(./Images/backdrop.jpg);
     opacity: 0.1;
     top: 0;
     left: 0;
@@ -63,23 +33,183 @@ body::after{
     height: 100%;
     position: absolute;
     background-attachment: fixed;
-    z-index: -1; 
+    z-index: -1;
+}
+
+figure {
+    margin: 0;
+    padding: 0;
+}
+
+figure a {
+    display: block;
+    line-height: 0;
+}
+
+form {
+    width: 100%;
+}
+
+.button {
+    background: #424242;
+    color: white;
+    padding: 4px 10px;
+    border-radius: 3px;
+}
+
+.box {
+    border: 2px solid #000000;
+    padding: 5px;
+}
+
+.card {
+    background: white;
+    border-radius: 6px;
+    box-shadow: 0px 3px 5px #00000030;
+    transition: transform 150ms ease-in-out;
+}
+
+.card:hover {
+    transform: scale(1.1, 1.1);
+}
+
+.card h2 {
+    margin-top: 0;
+}
+
+.card figure img {
+    width: auto;
+    height: auto;
+    max-width: 100%;
+    border-top-right-radius: 6px;
+    border-top-left-radius: 6px;
+}
+
+.card .card-inner {
+    padding: 1rem 2rem 2rem 2rem;
+}
+
+.page-section {
+    padding: 3rem;
+}
+
+.page-section.first-section {
+    margin-top: 5rem;
+}
+
+.page-section h2 {
+    margin-top: 0;
+}
+
+/* --- LAYOUT HELPERS */
+
+.container {
+    display: flex;
+    justify-content: space-around;
+    max-width: 1120px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.margin-top2 {
+    margin-top: 2rem;
+}
+
+.margin-right2 {
+    margin-right: 2rem;
+}
+
+.margin-bottom2 {
+    margin-bottom: 2rem;
+}
+
+.margin-left2 {
+    margin-left: 2rem;
+}
+
+.column50 {
+    max-width: 50%;
+}
+
+.flex-column {
+    display: flex;
+    flex-direction: column;
+}
+
+.flex-row {
+    display: flex;
+    flex-direction: row;
+}
+
+.flex-cards .card {
+    margin: 0 1rem;
+    flex-basis: 25%;
+    flex-grow: 0;
+}
+
+.flex-cards .card:first-child {
+    margin-left: 0
+}
+
+.flex-cards .card:last-child {
+    margin-right: 0
 }
 
 
-.wrapper {
-    text-align: center;
-    padding: 75px;
-    margin: 10px;
-    list-style-position: inside;
+
+/* --- HEADER & NAV */
+
+.site-header {
+    position: fixed;
+    top: 0;
+    display: flex;
+    padding: 0.5rem;
+    width: 100%;
+    background-color: white;
+    color: black;
+    opacity: 0.9;
+    z-index: 1;
 }
 
-.img-link {
-    width: 100px;
-    height: 100px;
+.header-logo {
+    display: block;
+    margin: 0;
+    color: #4B4A4A;
+    font-family: 'PT Serif', serif;
+    font-size: 1rem;
 }
 
-.form {
+.header-logo span {
+    padding-right: 3px;
+    border-right: solid 2px #000000;
+    color: #4B4A4A;
+    font-size: 1.5rem;
+}
+
+.site-nav {
+    display: block;
+    margin-left: auto;
+}
+
+.site-nav a {
+    font-family: 'PT Serif', serif;
+    background-color: #ffffff;
+    color: #000000;
+    padding: 10px 8px 10px 8px;
+    float: right;
+    text-decoration: none;
+}
+
+.site-nav a:hover {
+    color: #888282;
+}
+
+
+/* --- FORMS & INPUTS */
+
+.form input,
+.form textarea {
+    width: 100%;
     font-family: 'PT Serif', serif;
     color: black;
     border-radius: 5px;
@@ -88,4 +218,69 @@ body::after{
     margin: 10px auto;
     text-align: center;
     display: block;
+    max-width: 100%;
+}
+
+
+/* --- FOOTER */
+
+.footer-links a {
+    color: black;
+    margin: 0 0.5rem;
+}
+
+/* --- RESPONSIVE */
+
+
+@media (max-width: 800px) {
+    .container {
+        display: block;
+    }
+
+    .logo {
+        display: none;
+    }
+
+    .about-me {
+        max-width: 100%;
+    }
+
+    .img-link {
+        margin-bottom: 20px;
+    }
+
+    .footer-links a {
+        padding: 2px;
+        display: block;
+    }
+
+    .img-me {
+        width: 100%;
+        height: auto;
+    }
+
+    .site-nav {
+        float: none;
+        align-content: center;
+        margin: auto;
+    }
+
+    .card:hover {
+        transform: none;
+    }
+    
+    .flex-cards .card:first-child {
+        margin-left: 1rem
+    }
+
+    .flex-cards .card:last-child {
+        margin-right: 1rem
+    }
+
+    .flex-cards .card {
+        margin: 1rem 1rem;
+        flex-basis: 25%;
+        flex-grow: 0;
+    }
+
 }

@@ -5,120 +5,165 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Portfolio</title>
-    <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css?family=PT+Serif" rel="stylesheet">
 
+    <title>Portfolio</title>
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=PT+Serif">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
+        crossorigin="anonymous">
 </head>
 
 <body>
-    <header>
-        <nav>
-            <h1>AZ</h1>
-            <h4>Anna Zetterström</h4>
-            <a href="#Contact">Contact</a>
-            <a href="#Projects">Projects</a>
-            <a href="#CoverLetter">Cover Letter</a>
-            <a href="#Resume">Resume</a>
-        </nav>
-        <br>
-        <hr>
+    <header class="site-header">
+        <h1 class="logo header-logo">
+            <span>AZ</span>
+            Anna Zetterström
+        </h1>
 
+        <nav class="site-nav">
+            <a href="#contact">Contact</a>
+            <a href="#resume">Resume</a>
+            <a href="#projects">Projects</a>
+            <a href="#aboutme">About me</a>
+        </nav>
     </header>
 
+    <section id="aboutme" class="container page-section first-section">
+        <figure class="box margin-right2">
+            <a target="_blank" href="https://www.linkedin.com/in/anna-zetterstr%C3%B6m-585259b0">
+                <img class="img-me" src="./images/portfolio.jpeg" alt="Anna Zetterström" width="122" height="220">
+            </a>
+        </figure>
 
+        <div class="about-me">
+            <h2>About me</h2>
 
-    <main class="wrapper">
+            <p>
+                Jag utbildar mig till Frontend Utvecklare. Hittills har jag läst kurserna javascript 1, HTML & CSS,
+                Grafikverktyg och Frontend Projekt. Innan jag startar min LIA ska jag läsa ytterligare två kurser i
+                javascript samt backend och interaktivitet med databaser.
 
-<h1>Resume</h1>
-    <h3>Programming abilities</h3>
-    <ul>
-        <li>
-            Jag har pluggat C# på komvux, väldigt lite. Endast grundläggande.
-            Annars hade jag inga förkunskaper innan jag började på nackademin. <br>
-        </li>
-    </ul>
+            </p>
 
-    <h3>Tidigare kurser</h3>
-    <ol>
-        <li>
-            <b>Frontend-development, introduction and project methodology </b> <br>
-            Mestadels teori i denna kurs. Vi hade en uppgift där vi skulle göra en mockup av en hemsida i balsamiq.
-            Gick igenm scrum och agilt arbete.
-        </li>
-        <li>
-            <b>
-                Javascript 1
-            </b> <br>
-            Grundläggande kunsskaper. Väldigt grundläggande uppgifter, t.ex vi gjorde en tärning.
-            Kursen var 6 veckor lång, jag vet inte exakt hur många timmar jag la ner men ca 180 timmar.
-            Känner mig inte säker på javascript än plus att det va ett tag sen vi hade den kursen.
-        </li>
+            <p>
+                IT branschen intresserar mig för att den är innovativ och i konstant utveckling.
+                Jag drivs av att alltid får lära mig nya saker och utveckla min kompetens.
+            </p>
+        </div>
+    </section>
 
-        <li>
-            <b>HTML & CSS</b>  <br>
-            Grundläggande kunskaper. Vi gjorde en hemsida med vanilla HTML & CSS. <a target="_blank" href="https://www.annazetterstrom.site/">Vår websida.</a>
-            Kursen var 5 veckor lång, jag la ner ca 200 timmar.
-            HTML känner jag mig hyfsat säker på, CSS är jag inte lika bra på.
-        </li>
+    <section id="projects" class="container flex-column page-section">
+        <h2 class="margin-bottom2">Projects</h2>
 
-        <li>
-            <b>Grafikvertyg</b> <br>
-            Optimerade bilder i photoshop och gjorde mockups. Gjorde en logga i Illustrator. Kursen var 3 veckor lång.
-        </li>
-    </ol>
+        <div class="container flex-cards">
+            <div class="card card-responsive">
+                <figure class="card-header">
+                    <img src="./images/3.jpg" alt="pic 3">
+                </figure>
 
-    <h3>Kunskap</h3>
+                <div class="card-inner">
+                    <h2>Brick game</h2>
+                    <p>Written in Javascript</p>
 
-    <p>Jag är intresserad av programmerings delen av frontend. Jag är inte så intresserad av design biten. Men just nu
-        känner jag att javascript är den svåra delen, känner mig väldigt grön. HTML är lättast, CSS är också lite svårare.</p>
+                    <a target="_blank" href="https://annazetterstrom.github.io/game/" class="button">
+                        Play the game
+                    </a>
+                </div>
+            </div>
 
+            <div class="card card-responsive">
+                <figure class="card-header">
+                    <img src="./images/3.jpg" alt="pic 3">
+                </figure>
 
-<hr>
+                <div class="card-inner">
+                    <h2>Project 2</h2>
+                    <p>Website about web Accessibility</p>
 
+                    <a target="_blank" href="https://annazetterstrom.github.io/project/" class="button">
+                        Go to site
+                    </a>
+                </div>
+            </div>
 
-<h2>Cover Letter</h2>
+            <div class="card card-responsive">
+                <figure class="card-header">
+                    <img src="./images/3.jpg" alt="pic 3">
+                </figure>
 
+                <div class="card-inner">
+                    <h2>Project 3</h2>
+                    <p>Website about frontend tutorials</p>
 
+                    <a target="_blank" href="https://annazetterstrom.github.io/fend-tutorials/" class="button">
+                        Go to site
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
 
-<hr>
+    <section id="resume" class="container flex-column page-section">
+        <h2 class="margin-top">Resume and Courses</h2>
 
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum, eum temporibus adipisci perferendis est rem
+            incidunt amet nobis possimus quo nemo voluptates dolore modi! Fugit nisi minus recusandae cupiditate eos.
+        </p>
 
-<h2>Projects</h2>
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit, qui possimus! Commodi reprehenderit
+            veritatis doloribus aliquam odit harum quasi ex quas! Nesciunt dignissimos quam similique itaque
+            repudiandae nemo cumque autem minus dolore quos reprehenderit quae accusantium, quia sint cum porro minima
+            laudantium modi architecto consequuntur exercitationem saepe.
+        </p>
 
-<hr>
+        <p>
+            Fuga unde expedita maxime consectetur? Quia perspiciatis ipsum excepturi eaque provident repellat iure?
+            Illo aliquid tempora hic enim explicabo officia amet nemo doloribus maiores veniam quibusdam placeat atque
+            sunt voluptatibus, deserunt libero sit porro id quo magnam impedit optio cumque temporibus officiis.
+            Eligendi ex repellendus deserunt architecto nihil!
+        </p>
+    </section>
 
-
-
-
-
+    <section id="contact" class="container flex-column page-section">
         <h2>Get in touch with me</h2>
 
-        <p class="p">
-            Email: <a href="mailto:anna.wiktoria@me.com">anna.wiktoria@me.com</a>
-        </p>
- <a target="_blank"  href="https://github.com/annazetterstrom">
-        <img class="img-link" src="./Images/github.png" alt="Github">
- </a> 
- <a target="_blank"  href="https://www.linkedin.com/in/anna-zetterstr%C3%B6m-585259b0">
-     <img class="img-link" src="./Images/linkedin.png" alt="LinkedIn">
- </a>
-        <form name="contact" method="POST" data-netlify="true">
+        <div class="flex-row">
+            <form name="contact" method="POST" data-netlify="true" class="form">
+                <input type="hidden" name="form-name" value="contact">
+                <input type="text" name="name" placeholder="Name">
+                <input type="email" name="email" placeholder="Email" required>
 
-            <input class="form formmedia" type="text" name="name" placeholder="Name">
+                <textarea name="message" cols="50" rows="10" placeholder="Message"></textarea>
 
-            <input class="form formmedia" type="email" name="email" placeholder="Email" required>
+                <input type="submit" value="Send">
+            </form>
+        </div>
 
-            <textarea class="form formmedia" name="message" cols="50" rows="10" placeholder="Message"></textarea>
+        <div class="footer-links margin-top2">
+            <a class="block" href="mailto:anna.wiktoria@me.com">
+                <i class="fas fa-at"></i> anna.wiktoria@me.com
+            </a>
 
-            <input class="form formmedia" type="submit" value="Send">
-        </form>
+            <a class="block" href="tel:070-0373004">
+                <i class="fas fa-mobile-alt"></i> 070-0373004
+            </a>
 
-    </main>
+            <a class="block" target="_blank" href="https://github.com/annazetterstrom">
+                <i class="fab fa-github"></i> @annazetterstrom
+            </a>
 
+            <a class="block" target="_blank" href="https://www.linkedin.com/in/anna-zetterstr%C3%B6m-585259b0">
+                <i class="fab fa-linkedin-in"></i> @annazetterstrom
+            </a>
 
-
-
+            <a class="block" target="_blank" href="https://www.google.com/maps/place/Tomtebodav%C3%A4gen+3A,+171+65+Solna/data=!4m2!3m1!1s0x465f9d9cd12a90e3:0x5d507840ccf1f4a3?ved=2ahUKEwi3srXOq_zgAhWdw8QBHRX7DmsQ8gEwAHoECAMQAQ">
+                <i class="fas fa-map-pin"></i> Tomtebodavägen 3a
+            </a>
+        </div>
+    </section>
 
 </body>
 
