@@ -236,7 +236,7 @@ form {
 @media (min-width: 500px) and (max-width: 800px) {
     .img-me{
         max-width: 100px;
-        max-height: auto;
+        height: auto;
     }
   .box-responsive{
       border: none; 
